@@ -94,7 +94,7 @@
       <DependentUpon>ChangeSupplier.cs</DependentUpon>
     </Compile>
     <Compile Include="Connection.cs" />
-    <Compile Include="Customer.cs" />
+    <Compile Include="entity\Customer.cs" />
     <Compile Include="Kitchen.cs" />
     <Compile Include="Meal.cs" />
     <Compile Include="NewDeleteData.cs">
