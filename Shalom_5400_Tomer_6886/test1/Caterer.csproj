@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6AC2E03-EE0D-40A3-98A1-3A427615417D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>test1</RootNamespace>
+    <AssemblyName>test1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangeCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeCustomer.Designer.cs">
+      <DependentUpon>ChangeCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeKitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeKitchen.Designer.cs">
+      <DependentUpon>ChangeKitchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeMeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeMeal.Designer.cs">
+      <DependentUpon>ChangeMeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeProduct.Designer.cs">
+      <DependentUpon>ChangeProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeSupplier.Designer.cs">
+      <DependentUpon>ChangeSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="Kitchen.cs" />
+    <Compile Include="Meal.cs" />
+    <Compile Include="NewDeleteData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewDeleteData.Designer.cs">
+      <DependentUpon>NewDeleteData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewHealthyProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewHealthyProducts.Designer.cs">
+      <DependentUpon>NewHealthyProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewInsertMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewInsertMenu.Designer.cs">
+      <DependentUpon>NewInsertMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewMainProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewMainProgram.Designer.cs">
+      <DependentUpon>NewMainProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewPerformProcedure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewPerformProcedure.Designer.cs">
+      <DependentUpon>NewPerformProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewPopularProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewPopularProducts.Designer.cs">
+      <DependentUpon>NewPopularProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProductsInOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProductsInOrder.Designer.cs">
+      <DependentUpon>NewProductsInOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewDataTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewDataTables.Designer.cs">
+      <DependentUpon>NewDataTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="librarians_veteran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="librarians_veteran.Designer.cs">
+      <DependentUpon>librarians_veteran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="memberGTx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memberGTx.Designer.cs">
+      <DependentUpon>memberGTx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewSumOfReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewSumOfReservations.Designer.cs">
+      <DependentUpon>NewSumOfReservations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewUpdateMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewUpdateMenu.Designer.cs">
+      <DependentUpon>NewUpdateMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NewProductsQueries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProductsQueries.Designer.cs">
+      <DependentUpon>NewProductsQueries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs" />
+    <EmbeddedResource Include="ChangeCustomer.resx">
+      <DependentUpon>ChangeCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeKitchen.resx">
+      <DependentUpon>ChangeKitchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeMeal.resx">
+      <DependentUpon>ChangeMeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeProduct.resx">
+      <DependentUpon>ChangeProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeSupplier.resx">
+      <DependentUpon>ChangeSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDeleteData.resx">
+      <DependentUpon>NewDeleteData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewHealthyProducts.resx">
+      <DependentUpon>NewHealthyProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewInsertMenu.resx">
+      <DependentUpon>NewInsertMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewMainProgram.resx">
+      <DependentUpon>NewMainProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPerformProcedure.resx">
+      <DependentUpon>NewPerformProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPopularProducts.resx">
+      <DependentUpon>NewPopularProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDataTables.resx">
+      <DependentUpon>NewDataTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="librarians_veteran.resx">
+      <DependentUpon>librarians_veteran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memberGTx.resx">
+      <DependentUpon>memberGTx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProductsInOrder.resx">
+      <DependentUpon>NewProductsInOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewSumOfReservations.resx">
+      <DependentUpon>NewSumOfReservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewUpdateMenu.resx">
+      <DependentUpon>NewUpdateMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="NewProductsQueries.resx">
+      <DependentUpon>NewProductsQueries.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Customer.datasource" />
+    <None Include="Properties\DataSources\Kitchen.datasource" />
+    <None Include="Properties\DataSources\Meal.datasource" />
+    <None Include="Properties\DataSources\Product.datasource" />
+    <None Include="Properties\DataSources\Supplier.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
